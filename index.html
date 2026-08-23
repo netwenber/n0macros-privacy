@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>n0macros — Privacy Policy</title>
+<title>n0macros: Privacy Policy</title>
 <style>
   :root {
     --accent: #16a34a;
@@ -72,19 +72,19 @@
 </head>
 <body>
 
-<h1>n0macros — Privacy Policy</h1>
+<h1>n0macros: Privacy Policy</h1>
 <p class="updated">Last updated: <strong>August 23, 2026</strong></p>
 
 <p>n0macros is a free browser extension that helps you type faster in any input field: insert saved text snippets and templates, correct text typed in the wrong keyboard layout, fix wording with on-device AI, and auto-fill forms with saved or generated placeholder data.</p>
 
-<p>This policy explains what data the extension handles, where it is stored, and what — if anything — leaves your device.</p>
+<p>This policy explains what data the extension handles, where it is stored, and what (if anything) leaves your device.</p>
 
 <h2>1. Data the extension stores</h2>
 <p>n0macros stores the following locally, in your browser (<code>chrome.storage.local</code>):</p>
 <ul>
-  <li><strong>Text snippets and folders</strong> you create — the macros/templates themselves, their names, and how you've organized them.</li>
-  <li><strong>Settings</strong> — your preferences (appearance, hotkeys, language, feature toggles).</li>
-  <li><strong>Form-fill profiles</strong> — if you use the form-filling feature, the extension saves the field labels, CSS selectors, and the values you typed when recording a profile, so it can fill the same form again later. <strong>Password fields are never scanned, recorded, or filled.</strong></li>
+  <li><strong>Text snippets and folders</strong> you create: the macros/templates themselves, their names, and how you've organized them.</li>
+  <li><strong>Settings</strong>: your preferences (appearance, hotkeys, language, feature toggles).</li>
+  <li><strong>Form-fill profiles</strong>: if you use the form-filling feature, the extension saves the field labels, CSS selectors, and the values you typed when recording a profile, so it can fill the same form again later. <strong>Password fields are never scanned, recorded, or filled.</strong></li>
 </ul>
 <p>None of this data leaves your device unless you explicitly turn on Google Drive backup (see section 2).</p>
 
@@ -93,7 +93,7 @@
 <ul>
   <li>Only gives the extension access to a private folder it creates for itself.</li>
   <li>Does <strong>not</strong> give the extension access to any other file in your Drive.</li>
-  <li>Cannot be seen or opened by you (or anyone else) directly in the regular Google Drive interface — it exists solely as a backup channel for this extension.</li>
+  <li>Cannot be seen or opened by you (or anyone else) directly in the regular Google Drive interface; it exists solely as a backup channel for this extension.</li>
 </ul>
 <p>Your Google sign-in token is held only in memory for the current session and is never stored permanently or sent anywhere other than Google's own servers to perform the backup/restore action you requested.</p>
 <p>If you never enable this feature, no data ever leaves your browser.</p>
@@ -102,14 +102,14 @@
 <p>The text-proofreading feature uses Chrome's <strong>built-in, on-device AI model</strong> (Gemini Nano, via the Chrome Prompt API). When you use it:</p>
 <ul>
   <li>The text you select is processed <strong>locally on your own computer</strong>.</li>
-  <li>It is never sent to n0macros's developer, to Google's servers, or to any third party.</li>
-  <li>No network request is made by this feature.</li>
+  <li>It is never sent anywhere by n0macros itself: the extension makes no network request when using this feature. (You can verify this yourself: the extension's code contains no <code>fetch</code> or network calls in this module.)</li>
 </ul>
+<p>How Chrome's built-in AI model itself operates internally is part of the browser platform, not this extension. We can only speak to what our own code does.</p>
 
 <h2>4. Data we generate, but do not collect</h2>
 <p>The form-filling feature can optionally insert synthetic placeholder data (e.g. <code>{{faker.name}}</code>, <code>{{faker.email}}</code>, <code>{{faker.iban}}</code>) for testing purposes. This data is:</p>
 <ul>
-  <li><strong>Randomly generated</strong> on your device — it does not belong to, or describe, any real person.</li>
+  <li><strong>Randomly generated</strong> on your device: it does not belong to, or describe, any real person.</li>
   <li>Never stored beyond the moment it's inserted into a field.</li>
   <li>Not sent anywhere.</li>
 </ul>
@@ -127,7 +127,7 @@
 <p>n0macros is not directed at children under 13, and we do not knowingly collect data from children under 13.</p>
 
 <h2>7. Changes to this policy</h2>
-<p>If this policy changes — for example, if a future version adds a new feature that touches user data — this page will be updated, and the "Last updated" date above will reflect the change.</p>
+<p>If this policy changes (for example, if a future version adds a new feature that touches user data), this page will be updated, and the "Last updated" date above will reflect the change.</p>
 
 <h2>8. Contact</h2>
 <div class="contact">
@@ -135,7 +135,7 @@
   <strong><a href="mailto:netwenber@gmail.com">netwenber@gmail.com</a></strong></p>
 </div>
 
-<p class="footnote">This policy describes the free, publicly distributed version of n0macros. A separate corporate edition of this extension ("n0macros Rozetka Edition"), distributed only within a specific organization, has its own, separate privacy policy that applies only to that internal deployment.</p>
+<p class="footnote">This policy describes the free, publicly distributed version of n0macros. Separate corporate/white-label editions of this extension, distributed privately to a specific organization, are each governed by their own privacy policy that applies only to that internal deployment.</p>
 
 </body>
 </html>
